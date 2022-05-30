@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+#include <cstring>
+#include <cctype>
+using namespace std;
+
+int main()
+{
+    string s;
+    string Lower_string;
+    int lower=0,upper=0;
+    char ch;
+    cin>>s;
+    
+    
+    for (int i=0;i<s.size();i++)
+    {
+        if (isupper(s[i]))
+        {
+            upper++;
+        }
+        else lower++;
+    }
+    if (upper>lower)
+    {
+        char a;
+        for (int i=0;i<s.size();i++)
+        {
+           a=toupper(s[i]);
+           cout<<a;
+        }
+    }
+    else 
+    {
+        char b;
+        for (int i=0;i<s.size();i++)
+        {
+            b=tolower(s[i]);
+            cout<<b;
+        }
+    }
+ 
+   
+
+    return 0;
+}
