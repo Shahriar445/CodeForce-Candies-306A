@@ -1,5 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
+bool descendingOrder(int a, int b) // declear function for descendignOrder
+{
+    return (a > b);
+}
 int main()
 
 {
@@ -13,8 +17,8 @@ int main()
     v.push_back(345);
     v.push_back(45);
 
-    sort(v.begin(), v.end());
-    for (it = v.begin(); it != v.end(); it++)
+    sort(v.begin(), v.end(), descendingOrder); // descendingOrder  passing function
+    for (it = v.begin(); it != v.end(); it++)  // for print the element
     {
         cout << *it << "\t";
     }
