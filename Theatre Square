@@ -1,0 +1,16 @@
+// Problem: A. Theatre Square
+// Contest: Codeforces - Codeforces Beta Round #1
+// URL: https://codeforces.com/problemset/problem/1/A
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// 
+// Powered by CP Editor (https://cpeditor.org)
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long   n,m,a;
+	cin>>n>>m>>a;
+	cout<<((m+a-1)/a)*((n+a-1)/a)<<endl;
+}
